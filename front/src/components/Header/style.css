@@ -1,0 +1,29 @@
+.header{
+    width: 1240px;
+    height: 68px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    width: 309px;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary);
+    display: block;
+    width: 50%;
+}
+
