@@ -1,0 +1,18 @@
+.tag {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* position: absolute;
+    top: 150px; */
+}
+
+.tag p {
+    font-size: 14px;
+    color: #FFF;
+}
