@@ -6,6 +6,7 @@ const Carrousel = ({slides}) => {
     const [currentPictures, setCurrentPictures] = useState(0);
     const length = slides.length; // savoir cb il y a d'images dans le carrousel
     console.log(length);
+    
     // Image suivante si on est a l'avant dernière image du tableau alors retour à la première sinon image suivante
     const nextPictures = () => {
         setCurrentPictures(currentPictures === length - 1 ? 0 : currentPictures + 1);
@@ -18,29 +19,29 @@ const Carrousel = ({slides}) => {
 
     return (
         // <div>
-            <div className="carrousel">
+            <div className="carrouselMobile">
                 <button
                     onClick={prevPictures}
-                    className="button prev"> 
-                        <svg width="96" height="120" viewBox="0 0 96 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M70.0399 15.7831L62.9199 8.70312L23.3599 48.3031L62.9599 87.9031L70.0399 80.8231L37.5199 48.3031L70.0399 15.7831Z" fill="white"/>
+                    className="buttonMobile prevMobile"> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.51 3.87003L15.74 2.10003L5.84001 12L15.74 21.9L17.51 20.13L9.38001 12L17.51 3.87003Z" fill="white"/>
                         </svg>
                 </button>
                 <button
                     onClick={nextPictures}
-                    className="button next">
-                        <svg width="96" height="121" viewBox="0 0 96 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25.96 81.3458L33.04 88.4258L72.64 48.8258L33.04 9.22583L25.96 16.3058L58.48 48.8258L25.96 81.3458Z" fill="white"/>
+                    className="buttonMobile nextMobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.48999 20.13L8.25999 21.9L18.16 12L8.25999 2.09998L6.48999 3.86998L14.62 12L6.48999 20.13Z" fill="white"/>
                         </svg>
                 </button>
 
                 {slides.map((slide, index) => {
                     return (
                         <div
-                            className={index === currentPictures ? 'slide active' : 'slide'}
+                            className={index === currentPictures ? 'slideMobile active' : 'slideMobile'}
                             key={index}> 
                         {index === currentPictures && (
-                            <img src={slide.image} alt="Descirtion du logement" className="picture" />
+                            <img src={slide.image} alt="Descirtion du logement" className="pictureMobile" />
                         )}
                         </div>
                     );

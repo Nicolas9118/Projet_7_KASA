@@ -36,6 +36,7 @@
     background: #F6F6F6F6;
     border-radius: 5px;
     transform: translateY(-5px);
+    transform: scaleY(0);
     padding: 20px 10px;
     z-index: -1;
 }
@@ -44,5 +45,6 @@
 }
 
 .DropDown:hover .DropDown__Sub-menu {
-    transform: scaleY(0);
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
 }
