@@ -2,14 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 
-const Card = () => {
+const Card = ({data}) => {
+    console.log(data);
     return (
         <NavLink to="#" className="card"> 
-            {/* image selon la bdd mais 
-            pour l'instant c'est une div*/}
-            <div className="testImg"> </div>
+            <div className="shadowCover"> </div>
+            <img src={data.cover} alt="Cover Housing" />
 
-            <span className="title"> Titre de la location </span>
+            <span className="title"> {data.location} </span>
         </NavLink>
     )
 }

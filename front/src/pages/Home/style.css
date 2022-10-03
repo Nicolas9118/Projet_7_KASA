@@ -6,3 +6,66 @@
     min-height: 100vh;
     width: 100%;
 }
+
+.containerBanner {
+    width: 95%;
+    max-width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.blurBanner {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: #000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.containerBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slogan {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 3;
+    color: #FFF;
+    font-size: 48px;
+}
+
+.containerCard {
+    max-width: 1240px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .containerCard {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
