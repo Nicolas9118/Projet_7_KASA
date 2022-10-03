@@ -55,6 +55,7 @@
     color: var(--primary);
     font-weight: 400;
     font-size: 24px;
+    text-align: justify;
 }
 
 @keyframes openSubmenu {
@@ -65,5 +66,22 @@
     to {
         opacity: 1;
         transform: scaleY(1);
+    }
+}
+
+@media (max-width: 428px) {
+    .DropDownLarge {
+        max-width: 582px;
+        min-width: 335px;
+    }
+    .DropDownLarge__Menu p {
+        font-size: 13px;
+    }
+    .DropDownLarge svg {
+        width: 16px;
+        height: 16px;
+    }
+    .DropDownLarge__Sub-menuOn p {
+        font-size: 12px;
     }
 }
