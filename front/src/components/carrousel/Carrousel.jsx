@@ -5,7 +5,6 @@ import "./style.css";
 const Carrousel = ({slides}) => {
     const [currentPictures, setCurrentPictures] = useState(0);
     const length = slides.length; // savoir cb il y a d'images dans le carrousel
-    console.log(length);
     // Image suivante si on est a l'avant dernière image du tableau alors retour à la première sinon image suivante
     const nextPictures = () => {
         setCurrentPictures(currentPictures === length - 1 ? 0 : currentPictures + 1);
@@ -34,6 +33,7 @@ const Carrousel = ({slides}) => {
                         </svg>
                 </button>
 
+                {/* Pour chaque ligne du tableau afficher l'image correspondante et changer les classes et garder la clé au numéro de l'index du map */}
                 {slides.map((slide, index) => {
                     return (
                         <div
