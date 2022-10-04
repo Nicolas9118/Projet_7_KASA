@@ -1,14 +1,29 @@
+.containerTag {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+
+}
+
 .tag {
-    width: 115px;
+    min-width: 115px;
+    padding: 0 16px;
     height: 25px;
     border-radius: 10px;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px 5px;
 }
 
 .tag p {
     font-size: 14px;
     color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .containerTag {
+        margin: 16px 0 24px 0; 
+    }
 }

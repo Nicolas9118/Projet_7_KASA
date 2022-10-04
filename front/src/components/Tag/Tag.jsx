@@ -1,12 +1,18 @@
 import React from "react";
 import "./style.css"
 
-const Tag = () => {
+const Tag = ({tagName}) => {
     return (
-        <div className="tag">
-            <p> Tag-name </p>
-        </div>
-    )
+    <div className="containerTag">
+        {tagName.map((tag, index) => {
+                    return (
+                        <div className={`tag ${index}`} key={index}>
+                            <p> {tag} </p>
+                        </div>
+                    );
+                })}
+    </div>
+    );
 }
 
 export default Tag;

@@ -5,7 +5,7 @@ import "./style.css";
 const Card = ({data}) => {
     console.log(data);
     return (
-        <NavLink to="#" className="card"> 
+        <NavLink className="card" to={`/housingSheet/${data.id}`}> 
             <div className="shadowCover"> </div>
             <img src={data.cover} alt="Cover Housing" />
 

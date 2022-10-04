@@ -10,7 +10,6 @@ import Card from "../../components/Card/Card";
 
 /* Récupérer les données de mon fichier json */ 
 import jsonData from '../../data.json'
-console.log(jsonData);
 
 const Home = () => {
     const chemin = useLocation();
@@ -28,20 +27,8 @@ const Home = () => {
                 return (
                     <Card data={data}/>
                 )
-            })}
-            
+            })}   
             </div>
-
-
-
-
-
-            {/* <Tag />
-            {/* <DropDownLarge />
-            <DropDown />
-            
-            <Carrousel slides={CarrouselData}/>
-            <CarrouselMobile slides={CarrouselData} /> */}
             <Footer />
         </div>
     )
