@@ -17,7 +17,7 @@ const DropDown = ({name, sub}) => {
                     <path d="M4.6635 7.85949L2.53058 10.0046L14.4605 21.9233L26.3904 9.99257L24.2575 7.85949L14.4605 17.6572L4.6635 7.85949Z" fill="white"/>
                 </svg>
             </div>
-            <div className={`DropDown__Sub-menu${currentDrop ? "On" : "Off"}`}>
+            <div className={`DropDown__Sub-menu${currentDrop ? "Off" : "On"}`}>
                 {sub.map((subs, index) => {
                     return (
                         <div className={`${index}`} key={index}>
