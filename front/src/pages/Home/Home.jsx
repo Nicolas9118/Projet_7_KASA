@@ -23,11 +23,14 @@ const Home = () => {
                 <span className="slogan"> Chez vous, partout et ailleurs </span>
             </div>
             <div className="containerCard">
-            {jsonData.map((data) => {
+
+            {/* Quand un seul argument pas besoin des () et une seule ligne dans le return pas besoin de ce dernier */}
+             {jsonData.map(data => <Card data={data}/> )}
+             {/*{
                 return (
                     <Card data={data}/>
                 )
-            })}   
+            })}    */}
             </div>
             <Footer />
         </div>

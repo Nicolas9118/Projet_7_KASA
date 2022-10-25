@@ -11,7 +11,7 @@ function App() {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/about" element={<About />} />
       <Route exact path="/housingSheet/:id" element={<HousingSheet />} />
-      <Route path="/*" element={<Error />} />
+      <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

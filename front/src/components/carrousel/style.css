@@ -30,6 +30,18 @@
     transition-delay: 0s;
 }
 
+.numerotation {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+}
+
 .button {
     position: absolute;
     z-index: 2;
@@ -56,5 +68,9 @@
     .carrousel button svg {
         height: 36px;
         width: 36px;
+    }
+
+    .numerotation{
+        display: none;
     }
 }

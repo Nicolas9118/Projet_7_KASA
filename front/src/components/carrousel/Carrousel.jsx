@@ -5,6 +5,7 @@ import "./style.css";
 const Carrousel = ({slides}) => {
     const [currentPictures, setCurrentPictures] = useState(0);
     const length = slides.length; // savoir cb il y a d'images dans le carrousel
+    
     // Image suivante si on est a l'avant dernière image du tableau alors retour à la première sinon image suivante
     const nextPictures = () => {
         setCurrentPictures(currentPictures === length - 1 ? 0 : currentPictures + 1);
@@ -16,7 +17,6 @@ const Carrousel = ({slides}) => {
     }
 
     return (
-        // <div>
             <div className="carrousel">
                 <button
                     onClick={prevPictures}
@@ -40,13 +40,15 @@ const Carrousel = ({slides}) => {
                             className={index === currentPictures ? 'slide active' : 'slide'}
                             key={index}> 
                         {index === currentPictures && (
-                            <img src={slide} alt="Descirtion du logement" className="picture" />
+                            <>
+                                <img src={slide} alt="Description du logement" className="picture" />
+                                <p className="numerotation"> {index+1} / {length} </p> 
+                            </>
                         )}
                         </div>
                     );
                 })}
             </div>
-        // </div>
     )
 }
 
