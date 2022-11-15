@@ -18,6 +18,7 @@ const DropDown = ({name, sub}) => {
                 </svg>
             </div>
             <div className={`DropDown__Sub-menu${currentDrop ? "Off" : "On"}`}>
+                {/* Utiliser un .map pour créer un <p></p> pour chaque élément */}
                 {sub.map((subs, index) => {
                     return (
                         <div className={`${index}`} key={index}>

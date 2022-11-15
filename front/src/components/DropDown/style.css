@@ -1,9 +1,8 @@
 .DropDown {
     display: flex;
     flex-direction: column;
-    max-width: 582px;
     min-width: 335px;
-    width: 50%;
+    width: 45%;
     margin: 15px 0;
 }
 

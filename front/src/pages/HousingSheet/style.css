@@ -1,17 +1,16 @@
-.layout {
+.layoutHouse {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
+    justify-content: flex-start;
+    min-height: 85vh;
     width: 100%;
 }
 
 .up {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1240px;
+    width: 80%;
 }
 /* ----- UP Left  ----- */
 .left {
@@ -75,8 +74,7 @@
 
 
 .containerDrop {
-    width: 100%;
-    max-width: 1240px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

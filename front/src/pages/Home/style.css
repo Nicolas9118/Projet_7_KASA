@@ -1,4 +1,4 @@
-.layout {
+.layoutHome {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,8 +8,7 @@
 }
 
 .containerBanner {
-    width: 100%;
-    max-width: 1240px;
+    width: 80%;
     height: 223px;
     border-radius: 25px;
     margin: 40px 0;
@@ -53,13 +52,15 @@
 }
 
 .containerCard {
-    max-width: 1240px;
-    width: 95%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 56px 50px;
 }
 
 @media (max-width: 768px) {
