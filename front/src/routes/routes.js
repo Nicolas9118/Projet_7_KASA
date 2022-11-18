@@ -7,7 +7,6 @@ import HousingSheet from "../pages/HousingSheet/HousingSheet";
 import Error from "../pages/Error404/Error404";
 
 function Adresse() {
-  // const chemin = useLocation();
   return (
     <BrowserRouter>
       <Layout>

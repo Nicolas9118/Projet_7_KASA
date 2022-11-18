@@ -1,11 +1,7 @@
 import React from "react";
-// import { useEffect } from "react";
-// import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./style.css";
 import Banner from "../../assets/banniere_home.png";
-// import Header from "../../components/Header/Header";
-// import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 
 /* Récupérer les données de mon fichier json */ 

@@ -1,14 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import "./style.css";
 import Carrousel from "../../components/Carrousel/Carrousel"
 import Tag from "../../components/Tag/Tag";
 import Drop from "../../components/DropDown/DropDown";
 import jsonData from '../../data.json'
 import Error from "../Error404/Error404";
-
-
 
 const House = () => {
     const { id } = useParams();
@@ -19,7 +16,7 @@ const House = () => {
     let starComplete = true;
 
     for(let index = 0; index < 5; index++) {
-        //sécurité (chainage optionnel) si mon idData existe alors aller chercher mon .rating sinon rien faire
+        //sécurité (chainage optionnel) si mon idData existe alors aller chercher mon .rating sinon idData.rating sera undified
         if( index === parseInt(idData?.rating) ) {
             starComplete = false;
         }
