@@ -21,7 +21,7 @@ const DropDown = ({name, sub}) => {
                 {/* Utiliser un .map pour créer un <p></p> pour chaque élément */}
                 {sub.map((subs, index) => {
                     return (
-                        <div className={`${index}`} key={index}>
+                        <div key={index}>
                             <p> {subs} </p>
                         </div>
                     );
