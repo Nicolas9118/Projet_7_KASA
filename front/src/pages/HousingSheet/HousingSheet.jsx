@@ -35,8 +35,11 @@ const House = () => {
 
     // mettre en tableau descirption pour qu'il soit pris en compte par le map du DropDown
     const description = [];
-    description.push(idData.description);
-
+    if(idData){
+        description.push(idData.description);
+    }
+    
+    
     return (
         <>
         {/* si idData existe alors afficher ma page HousingSheet sinon afficher la page Error */}
