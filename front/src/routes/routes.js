@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 import Layout from "../pages/Layout/Layout";
 import Home from "../pages/Home/Home";
@@ -8,7 +8,7 @@ import Error from "../pages/Error404/Error404";
 
 function Adresse() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function Adresse() {
           <Route path="*" element={<Error />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
