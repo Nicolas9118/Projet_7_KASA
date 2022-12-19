@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Projet_7_KASA/static/css/main.16b30ccd.css",
+    "main.js": "/Projet_7_KASA/static/js/main.6517c5bf.js",
+    "static/media/banniere_about.png": "/Projet_7_KASA/static/media/banniere_about.00ffed0a838c49b964ca.png",
+    "static/media/banniere_home.png": "/Projet_7_KASA/static/media/banniere_home.efc1935eb81fc5e585f9.png",
+    "index.html": "/Projet_7_KASA/index.html",
+    "main.16b30ccd.css.map": "/Projet_7_KASA/static/css/main.16b30ccd.css.map",
+    "main.6517c5bf.js.map": "/Projet_7_KASA/static/js/main.6517c5bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16b30ccd.css",
+    "static/js/main.6517c5bf.js"
+  ]
+}
